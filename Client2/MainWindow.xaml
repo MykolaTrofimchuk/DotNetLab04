@@ -1,0 +1,18 @@
+﻿<Window x:Class="Client2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="814" Loaded="Window_Loaded" Closing="Window_Closing">
+    <Grid>
+        <TextBox x:Name="tbUserName" HorizontalAlignment="Left" Margin="178,10,0,0" TextWrapping="Wrap" Text="User name" VerticalAlignment="Top" Width="375" Height="35"/>
+        <Button x:Name="bConnectDiscon" Content="Connect" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="163" Height="35" Click="Button_Click"/>
+        <ListBox x:Name="lbChatWindow" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,50,261,139"/>
+        <TextBox x:Name="tbMessage" HorizontalAlignment="Left" Margin="10,300,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="543" Height="67" KeyDown="tbMessage_KeyDown"/>
+        <ListBox x:Name="lbUsersOnline" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="568,50,10,67"/>
+        <Label Content="Users Online:" HorizontalAlignment="Left" Margin="568,12,0,0" VerticalAlignment="Top" Width="236" FontSize="16" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
